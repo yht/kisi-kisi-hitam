@@ -6,7 +6,7 @@
   <link rel="dns-prefecth" href="//yht.web.id" />
   <link rel="dns-prefecth" href="//blog.yht.web.id" />
   <link rel="dns-prefecth" href="//kalamangga.net" />
-  <link rel="dns-prefecth" href="//cdn.kalamangga.net" />
+  <link rel="dns-prefecth" href="//code.jquery.com" />
   <link rel="dns-prefecth" href="//piwik.kalamangga.net" />
 
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 
-  <script src="//cdn.kalamangga.net/pustaka/jquery/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="//cdn.kalamangga.net/pustaka/jquery/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="<?php bloginfo('template_url') ?>/js/functions.js" type="text/javascript" charset="utf-8"></script>
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
