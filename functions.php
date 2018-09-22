@@ -1,8 +1,10 @@
 <?php
 /**
  *	@package WordPress
- *	@subpackage Grid_Focus
+ *	@subpackage kisi-kisi-hitam
  */
+ define("CDNURL", "//cdn.staticaly.com/gh/yht/kisi-kisi-hitam/master");
+
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name' => 'Primary - Index',
@@ -25,7 +27,7 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h3 class="widgetTitle">',
 		'after_title' => '</h3>'
 	));
-} 
+};
 
 add_filter('comments_template', 'legacy_comments');
 	function legacy_comments($file) {
@@ -33,6 +35,6 @@ add_filter('comments_template', 'legacy_comments');
 	$file = TEMPLATEPATH . '/legacy.comments.php';
 	endif;
 	return $file;
-}
+};
 
 ?>
