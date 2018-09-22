@@ -31,7 +31,7 @@
    <div id="masthead" class="fix">
     <h1><a href="<?php echo get_settings('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
     <div id="blogLead">
-     <img src="<?php bloginfo('template_directory'); ?>/images/avatar.png" alt="Icon" />
+     <img src="<?php echo CDNURL ?>/images/avatar.png" alt="Icon" />
      <p id="authorIntro"><?php bloginfo('description'); ?></p>
     </div>
    </div>
