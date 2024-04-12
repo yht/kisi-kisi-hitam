@@ -7,7 +7,6 @@
   <link rel="dns-prefecth" href="//blog.yht.web.id" />
   <link rel="dns-prefecth" href="//kalamangga.net" />
   <link rel="dns-prefecth" href="//code.jquery.com" />
-  <link rel="dns-prefecth" href="//piwik.kalamangga.net" />
 
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <title><?php if (function_exists('is_tag') && is_tag()) { echo 'Posts tagged &quot;'.$tag.'&quot; - '; } elseif (is_archive()) { wp_title(''); echo ' Archive - '; } elseif (is_search()) { echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; } elseif (!(is_404()) && (is_single()) || (is_page())) { wp_title(''); echo ' - '; } elseif (is_404()) { echo 'Not Found - '; } bloginfo('name'); ?></title>

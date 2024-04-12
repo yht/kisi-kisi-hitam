@@ -3,7 +3,7 @@
  *	@package WordPress
  *	@subpackage kisi-kisi-hitam
  */
- define("CDNURL", "//cdn.staticaly.com/gh/yht/kisi-kisi-hitam/master");
+ define("CDNURL", "https://raw.githubusercontent.com/yht/kisi-kisi-hitam/master/");
 
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
