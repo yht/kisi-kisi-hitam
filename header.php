@@ -13,12 +13,12 @@
   <meta name="generator" content="gedit 3.4.2 & nano 2.2.6" />
   <meta name="author" content="Yudha H Tejaningrat" />
 
-  <link rel="stylesheet" href="<?php echo CDNURL ?>/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php wp_enqueue_style('style', get_stylesheet_uri()); ?>" type="text/css" media="screen" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 
   <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="<?php echo CDNURL ?>/js/functions.js" type="text/javascript" charset="utf-8"></script>
+  <script src="<?php wp_enqueue_script('functions'); ?>" type="text/javascript" charset="utf-8"></script>
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php wp_head(); ?>

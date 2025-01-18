@@ -3,7 +3,7 @@
  *	@package WordPress
  *	@subpackage kisi-kisi-hitam
  */
- define("CDNURL", "https://raw.githubusercontent.com/yht/kisi-kisi-hitam/master/");
+define("CDNURL", "https://raw.githubusercontent.com/yht/kisi-kisi-hitam/master/");
 
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
@@ -37,4 +37,7 @@ add_filter('comments_template', 'legacy_comments');
 	return $file;
 };
 
+wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, '1', 'all');
+wp_register_script('functions', get_template_directory_uri() . '/js/functions.js', array(), '1.0.0',
+                   array('strategy'  => 'defer', ) );
 ?>
